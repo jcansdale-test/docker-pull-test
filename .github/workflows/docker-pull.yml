@@ -1,0 +1,11 @@
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: docker pull ghcr.io/cybozu-go/coil:2.0.3
+
